@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jeff Gonzalez <likwid at gmail>",
   "dependencies": {
+    "bluebird": "^3.5.4",
     "gatsby": "^2.9.6",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -13,17 +14,31 @@
     "gatsby-plugin-sharp": "^2.1.6",
     "gatsby-source-filesystem": "^2.0.40",
     "gatsby-transformer-sharp": "^2.1.21",
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3",
     "prop-types": "^15.7.2",
+    "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-hyperscript": "^3.2.0"
   },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+	},
   "keywords": [
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""

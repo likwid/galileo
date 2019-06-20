@@ -1,0 +1,54 @@
+{
+    "extends": "airbnb",
+    "env": { "mocha": true, "es6": true },
+    "rules": {
+        "quotes": ["error", "single"],
+        "no-param-reassign": ["warn"],
+        "comma-dangle": ["error", "never"],
+        "no-underscore-dangle": ["off"],
+        "one-var": ["off"],
+        "one-var-declaration-per-line": ["off"],
+        "operator-linebreak": ["error", "after"],
+        "arrow-parens": ["error", "as-needed"],
+        "object-curly-spacing": ["error", "never"],
+        "global-require": ["off"],
+        "max-len": ["off"],
+        "func-names": ["off"],
+        "no-confusing-arrow": ["off"],
+        "curly": ["error", "all"],
+        "brace-style": ["error", "1tbs"],
+        "no-invalid-this": ["error"],
+        "no-warning-comments": ["warn", {"location": "anywhere"}],
+        "new-cap": ["error"],
+        "eqeqeq": ["error", "always"],
+        "object-curly-newline": ["error",  { "ObjectPattern": { "multiline": true } }],
+        "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+        "consistent-return": ["error", { "treatUndefinedAsUnspecified": false }],
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "class-methods-use-this": 0,
+        "implicit-arrow-linebreak": ["off"],
+        "import/no-extraneous-dependencies": ["off"],
+        "react/jsx-first-prop-new-line": "never",
+        "react/jsx-max-props-per-line": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "react/button-has-type": 0,
+        "react/prop-types": ["off"],
+        "react/destructuring-assignment": ["off"],
+        "react/no-multi-comp": 0,
+        "react/prefer-stateless-function": [true, { "ignorePureComponents": true }],
+        "jsx-a11y/interactive-supports-focus": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": { "config": "webpack.dev.config.js" }
+        }
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+}
